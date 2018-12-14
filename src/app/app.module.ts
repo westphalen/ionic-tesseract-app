@@ -6,6 +6,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
+import { OcrProvider } from '../providers/ocr'
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { HomePage } from '../pages/home/home';
   providers: [
     StatusBar,
     SplashScreen,
+    OcrProvider,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
